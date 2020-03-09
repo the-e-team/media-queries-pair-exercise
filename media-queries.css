@@ -3,6 +3,9 @@
 
 * {
     font-family: Ubuntu, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+
 
     /*height: 100vh;*/
 }
@@ -34,6 +37,7 @@ body {
 .header-img>img {
     height: 224px;
     width: 339px;
+
 }
 
 
@@ -48,6 +52,10 @@ h1 {
 .nav-links {
     padding: 0;
     margin: 0;
+}
+
+ul .nav-links {
+    width: calc(100% - 68px);
 }
 
 .nav-links>li {
@@ -69,7 +77,7 @@ h2 {
 }
 
 .main>p {
-    margin: 7px 0 18px 0;
+    margin: 7px 0 30px 0;
 }
 
 .sub-section {
@@ -80,10 +88,13 @@ h2 {
 .sub-section h2 {
     font-size: 20px;
     font-weight: bolder;
+    margin-left: 0;
+    margin-bottom: 10px;
 }
 
 .sub-section p {
     font-size: 13px;
+    margin-left: 0;
 }
 
 footer {
@@ -94,6 +105,7 @@ footer {
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width:992px) {
+
 
 
 
