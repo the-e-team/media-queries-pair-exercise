@@ -2,6 +2,8 @@
 
 * {
     font-family: Ubuntu, sans-serif;
+
+    /*height: 100vh;*/
 }
 
 body {
@@ -11,17 +13,29 @@ body {
     flex-direction: column;
 }
 
-#main {
-
-
-
+.alert-info>a {
+    background: lightblue;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border: solid black 1px;
+    text-decoration: none;
+    color: black
 }
+
+
+.header-img>img {
+    height: 224px;
+    width: 339px;
+}
+
 
 h1 {
     display: flex;
     justify-content: center;
     font-size: 46px;
     font-weight: bold;
+    margin: 5px 0 20px 0;
 }
 
 .nav-links {
@@ -37,6 +51,14 @@ h1 {
     justify-content: center;
     align-items: center;
     height: 50px;
+}
+
+.main>h2 {
+    margin: 19px 0 0 0;
+}
+
+.main>p {
+    margin: 7px 0 18px 0;
 }
 
 .sub-section {
@@ -57,6 +79,10 @@ h2 {
     font-size: 13px;
 }
 
+footer {
+    margin: 50px 0 0 0;
+    font-size: 9px;
+}
 
 
 /* Large devices (desktops, 992px and up) */
