@@ -1,9 +1,9 @@
 /*mobile-first design*/
 
 * {
-
-
+    font-family: Ubuntu, sans-serif;
 }
+
 body {
     width: 339px;
     display: flex;
@@ -11,29 +11,51 @@ body {
     flex-direction: column;
 }
 
+#main {
+
+
+
+}
 
 h1 {
     display: flex;
     justify-content: center;
-    font-family: sans-serif;
     font-size: 46px;
+    font-weight: bold;
 }
 
 .nav-links {
     padding: 0;
+    margin: 0;
 }
 
 .nav-links>li {
     background: lightgray;
-    margin: 12px;
+    margin: 12px 0;
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
-    font-family: sans-serif;
 }
 
+.sub-section {
+    font-style: italic;
+
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+.sub-section h2 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.sub-section p {
+    font-size: 13px;
+}
 
 
 
