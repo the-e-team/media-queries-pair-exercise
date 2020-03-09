@@ -111,19 +111,21 @@ footer {
     body {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 100px 400px 400px 100px;
-        height: auto;
-        width: 100vw;
+        grid-template-rows: 1fr 4fr 4fr 1fr;
+        height: 100vh;
+        width: calc(100% - 400px);
+        margin: 40px 200px;
 
-        grid-template-areas: "company       nav-links" "img           img" "main-section  sub-section" "bottom-footer bottom-footer";
+        grid-template-areas: "company       nav-links"
+                            "image           image"
+                            "main-section  sub-section"
+                            "bottom-footer bottom-footer";
     }
 
     h1 {
         grid-area: company;
-        margin-top: 35px;
         display: flex;
         justify-content: flex-start;
-        padding-left: 15px;
 
     }
 
@@ -135,8 +137,12 @@ footer {
     ul {
         display: flex;
         flex-direction: row;
+
     }
 
+    ul .nav-links {
+        display: flex;
+    }
 
     .nav-links > li {
         background: white;
@@ -145,48 +151,40 @@ footer {
 
     }
     a {
-        padding: 10px;
+        padding: 20px 0 20px 10px;
     }
+
+
 
 
     .header-img {
-        /*display: flex;*/
-        /*justify-content: center;*/
-    }
-
-    .header-img > img {
-
+        grid-area: image;
         height: auto;
         width: 100%;
     }
 
-
-    div .header-img {
-        grid-area: img;
+    .header-img img {
+        width: 100%;
+        height: auto;
     }
-
-    section .main {
+    #main {
         grid-area: main-section;
     }
     .main p {
-        margin-right: 10px;
+        margin-right: 15px
     }
 
-    section .sub-section {
+    .sub-section {
         grid-area: sub-section;
     }
 
-    h2 {
-        margin-top: 35px;
-        margin-bottom: 45px;
-    }
+
     #main h2 {
-        margin-top: 35px;
-        margin-bottom: 45px;
+        margin: 45px 0;
     }
 
     .sub-section h2 {
-        margin-bottom: 45px;
+        margin: 45px 0;
     }
 
     footer {
