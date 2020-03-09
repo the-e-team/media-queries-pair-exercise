@@ -6,8 +6,6 @@
     margin: 0 auto;
     padding: 0;
 
-
-    /*height: 100vh;*/
 }
 
 body {
@@ -106,73 +104,94 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width:992px) {
 
-    .hidden-on-desktop>a {
+    .hidden-on-desktop > a {
         display: none;
     }
 
-body {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 100px 400px 400px 100px;
-    height: auto;
-    width: 100vw;
+    body {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 100px 400px 400px 100px;
+        height: auto;
+        width: 100vw;
 
-    grid-template-areas:
-            "company       nav-links"
-            "img           img"
-            "main-section  sub-section"
-            "bottom-footer bottom-footer";
-}
+        grid-template-areas: "company       nav-links" "img           img" "main-section  sub-section" "bottom-footer bottom-footer";
+    }
 
-h1 {
-    grid-area: company
-}
+    h1 {
+        grid-area: company;
+        margin-top: 35px;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 15px;
 
-nav {
-    grid-area: nav-links;
+    }
 
-}
+    nav {
+        grid-area: nav-links;
 
-ul {
-    display: flex;
-    flex-direction: row;
+    }
 
-}
-
-
-.nav-links>li {
-    background: white;
-    display: flex;
-    align-items: ;
-
-}
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
 
 
-.header-img {
-    display: flex;
-    justify-content: center;
-}
-    .header-img>img {
+    .nav-links > li {
+        background: white;
+        display: flex;
+        margin-top: 35px;
 
-    height: auto;
+    }
+    a {
+        padding: 10px;
+    }
+
+
+    .header-img {
+        /*display: flex;*/
+        /*justify-content: center;*/
+    }
+
+    .header-img > img {
+
+        height: auto;
         width: 100%;
     }
 
 
     div .header-img {
-    grid-area: img;
-}
+        grid-area: img;
+    }
 
-section .main {
-    grid-area: main-section;
-}
+    section .main {
+        grid-area: main-section;
+    }
+    .main p {
+        margin-right: 10px;
+    }
 
-section .sub-section {
-    grid-area: sub-section;
-}
+    section .sub-section {
+        grid-area: sub-section;
+    }
 
-footer {
-    grid-area: bottom-footer;
+    h2 {
+        margin-top: 35px;
+        margin-bottom: 45px;
+    }
+    #main h2 {
+        margin-top: 35px;
+        margin-bottom: 45px;
+    }
+
+    .sub-section h2 {
+        margin-bottom: 45px;
+    }
+
+    footer {
+        grid-area: bottom-footer;
+    }
 }
 
 
