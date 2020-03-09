@@ -106,11 +106,73 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width:992px) {
 
+    .hidden-on-desktop>a {
+        display: none;
+    }
 
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 400px 400px 100px;
+    height: auto;
+    width: 100vw;
 
+    grid-template-areas:
+            "company       nav-links"
+            "img           img"
+            "main-section  sub-section"
+            "bottom-footer bottom-footer";
+}
 
+h1 {
+    grid-area: company
+}
 
-
-
+nav {
+    grid-area: nav-links;
 
 }
+
+ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.nav-links>li {
+    background: white;
+    display: flex;
+    align-items: ;
+
+}
+
+
+.header-img {
+    display: flex;
+    justify-content: center;
+}
+    .header-img>img {
+
+    height: auto;
+        width: 100%;
+    }
+
+
+    div .header-img {
+    grid-area: img;
+}
+
+section .main {
+    grid-area: main-section;
+}
+
+section .sub-section {
+    grid-area: sub-section;
+}
+
+footer {
+    grid-area: bottom-footer;
+}
+
+
