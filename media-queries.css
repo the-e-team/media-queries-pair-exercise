@@ -1,4 +1,5 @@
 /*mobile-first design*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 * {
     font-family: Ubuntu, sans-serif;
@@ -7,10 +8,12 @@
 }
 
 body {
-    width: 339px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    /*width: 339px;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex-direction: column;*/
+    width: 100vw;
+    height: 100vh;
 }
 
 .alert-info>a {
@@ -23,6 +26,10 @@ body {
     color: black
 }
 
+.header-img {
+    display: flex;
+    justify-content: center;
+}
 
 .header-img>img {
     height: 224px;
@@ -53,6 +60,10 @@ h1 {
     height: 50px;
 }
 
+h2 {
+    font-weight: bolder;
+}
+
 .main>h2 {
     margin: 19px 0 0 0;
 }
@@ -64,10 +75,6 @@ h1 {
 .sub-section {
     font-style: italic;
 
-}
-
-h2 {
-    font-weight: bolder;
 }
 
 .sub-section h2 {
